@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+	/* Primary */
+	--very-light-cyan: #60ccce;
+	--light-cyan: hsl(179, 47.2%, 51.8%);
+	--cyan: hsl(179, 62%, 43%);
+	--bright-yellow: hsl(71, 73%, 54%);
+	/* Neutral */
+	--light-gray: hsl(204, 43%, 93%);
+	--light-gray-text: rgb(140, 149, 150);
+	--grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Karla', sans-serif;
+	margin: 0;
+	background-color: lightslategray;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 391px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 200px 200px 200px 200px;
+}
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+.card {
+	background-color: #fff;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.card-top {
+	padding: 13px 28px 26px;
+}
+
+.card-top .card-title {
+	color: var(--cyan);
+	margin-bottom: 29px;
+}
+
+.card-top .card-subtitle {
+	color: var(--bright-yellow);
+	margin-bottom: 22px;
+}
+
+.card-top .card-text {
+	color: var(--grayish-blue);
+	line-height: 1.7rem;
+}
+
+.card-body {
+	background-color: var(--cyan);
+}
+
+.card-body {
+	color: #fff;
+}
+
+.price {
+	font-size: 2rem;
+	margin: 0;
+}
+
+.text-muted {
+	color: var(--very-light-cyan);
+	font-size: 1rem;
+	position: relative;
+	top: -6px;
+}
+
+.card-cta {
+	padding: 20px 28px 30px;
+}
+
+.subtitle {
+	margin-top: 11px;
+	margin-bottom: 30px;
+}
+
+.btn {
+	background-color: var(--bright-yellow);
+	border-radius: 5px;
+	border: none;
+	font-size: 1.2rem;
+	font-family: inherit;
+	color: #fff;
+	padding: 18px 30px;
+	cursor: pointer;
+	width: 100%;
+	box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
+
+.btn:focus {
+	outline: 0;
+}
+
+.why-us {
+	background-color: var(--light-cyan);
+	padding: 10px 28px 20px;
+}
+
+.why-us ul {
+	color: #9dfbfa;
+	list-style-type: none;
+	padding: 0;
+}
+
+.why-us ul li {
+	margin-bottom: 4px;
+}
