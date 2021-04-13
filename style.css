@@ -19,7 +19,7 @@
 body {
 	font-family: 'Karla', sans-serif;
 	margin: 0;
-	background-color: lightslategray;
+	background-color: rgb(217, 223, 230);
 	height: 100vh;
 	display: flex;
 	align-items: center;
@@ -32,10 +32,9 @@ body {
 	padding-right: 8px;
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 200px 200px 200px 200px;
+.card-cta .card-title,
+.why-us .card-title {
+	color: #fff;
 }
 
 @media (min-width: 576px) {
@@ -47,6 +46,30 @@ body {
 @media (min-width: 768px) {
 	.container {
 		max-width: 720px;
+	}
+
+	.card .card-top {
+		padding-bottom: 15px;
+	}
+
+	.card-title {
+		margin-bottom: 22px;
+	}
+
+	.card-top .card-subtitle {
+		margin-bottom: 16px;
+	}
+
+	.card-body {
+		display: flex;
+	}
+
+	.card-cta {
+		flex: 1;
+	}
+
+	.why-us {
+		flex: 1;
 	}
 }
 
@@ -66,18 +89,20 @@ body {
 	background-color: #fff;
 	border-radius: 6px;
 	overflow: hidden;
+	box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+	max-width: 635px;
 }
 
 .card-top {
 	padding: 13px 28px 26px;
 }
 
-.card-top .card-title {
+.card-title {
 	color: var(--cyan);
 	margin-bottom: 29px;
 }
 
-.card-top .card-subtitle {
+.card-subtitle {
 	color: var(--bright-yellow);
 	margin-bottom: 22px;
 }
